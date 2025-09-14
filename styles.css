@@ -1,0 +1,166 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+}
+
+html {
+  background-color: 
+  #fffffa
+  /* rgb(195, 240, 225) */
+  /* #970747 */
+  ;
+}
+h1, h2{
+  color: black;
+}
+/* index css */
+#title,
+#description,
+h2, .option-label {
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+}
+
+li {
+  margin: 5px 0;
+  width: 10px;
+}
+ul{
+  list-style: none;
+}
+
+ul
+/* li label */
+{
+  display: flex;
+  /* align-items: center; */
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+ul li{
+  display: inline-block;
+  padding: 25px;
+  width: 
+  /* max-content */
+  fit-content
+  ;
+  /* height: max-content; */
+}
+
+ul li label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-label {
+  width: 200px;
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  border: 3px solid #702632;
+  color: lightgray;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #912f40;
+}
+
+#last-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#last-section label{
+  padding: 20px;
+  background-color: #912f40;
+  border: 5px solid #702632;
+  color: lightgrey;
+  margin: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 100px;
+}
+
+textarea{
+  display: block;
+  width: 100%;
+  margin: 10px;
+}
+
+#submit{
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+#survey-form {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#name, #email, #number, #dropdown{
+  display: block;
+  width: 100%;
+}
+/* form input:nth-of-type(-n+3) {
+  display: block;
+  width: 100%;
+  margin: 11px;
+  padding: 5px;
+} */
+
+#dropdown {
+  width: 100%;
+  margin: 11px;
+}
+
+.field-label {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 11px 0;
+  padding: 5px;
+  /* background-color: rgba(237, 186, 90, 0.705); */
+  background-color: darkgrey;
+  border: 2px solid rgba(237, 186, 90, 0.705);
+  color: white;
+  text-shadow: 2px 2px  black;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 200px;
+}
+
+#submit{
+  font-size: 20px;
+  font-weight: 200;
+  background-color: #912f40;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 75px;
+}
+
+/* --------------------------------------------------------------------------------- */
+img {
+  display: block;
+}
+
+#image {
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+}

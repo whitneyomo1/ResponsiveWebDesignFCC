@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title"> Make-believe World</h1>
+    <p id="description">Create your own fantasy world now</p>
+    <section>
+        <form id="survey-form">
+            <label for="name" id="name-label" class="field-label">Name </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label" class="field-label">Email</label>
+            <input type="text" id="email" placeholder="Enter email here" required>
+
+            <label for="number" id="number-label" class="field-label">How many powers do you want</label>
+            <input type="number" id="number" placeholder="0" min="1" max="3">
+
+            <label for="dropdown" id="dropdown-label" class="field-label">Choose your race</label>
+            <select name="race" id="dropdown">
+                <option value="1">Elf</option>
+                <option value="2">Fairy</option>
+                <option value="3">Dwarf</option>
+                <option value="4">Human</option>
+                <option value="5">God</option>
+                <option value="6">Demon</option>
+            </select>
+
+            <h2>What would you like to include in this world</h2>
+            <ul class="options-list">
+                <li>
+                    <label class="option-label">
+                        <input type="checkbox" id="Aliens" name="world-extras" value="Alien"> Aliens
+                    </label>
+                </li>
+                <li>
+                    <label class="option-label">
+                        <input type="checkbox" id="NPCs" name="world-extras" value="NPC"> NPCs (race types)
+                    </label>
+                </li>
+                <li>
+                    <label class="option-label">
+                        <input type="checkbox" id="Unicorns" name="world-extras" value="Unicorn"> Unicorns
+                    </label>
+                </li>
+                <li>
+                    <label class="option-label">
+                        <input type="checkbox" id="Dragons" name="world-extras" value="Dragon"> Dragons
+                    </label>
+                </li>
+            </ul>
+
+            <h2>What Authoritative position would you like</h2>
+                <section id="last-section">
+                    <label><input type="radio" name="pos" value="king" class="pos"> King</label>
+                    <label><input type="radio" name="pos" value="queen" class="pos"> Queen</label>
+                    <label><input type="radio" name="pos" value="guard" class="pos"> Guard</label>
+                    <label><input type="radio" name="pos" value="civilian" class="pos"> Civilian</label>
+                </section>
+            <textarea
+                name="world-description">Elaborate more on what you would like to see in this fantasy world here.</textarea>
+
+            <button type="submit" id="submit">Submit now</button>
+        </form>
+    </section>
+</body>
+
+</html>
