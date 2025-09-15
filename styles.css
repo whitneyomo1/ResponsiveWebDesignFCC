@@ -14,7 +14,7 @@ html {
 h1, h2{
   color: black;
 }
-/* index css */
+
 #title,
 #description,
 h2, .option-label {
@@ -33,7 +33,7 @@ ul{
   list-style: none;
 }
 
-ul
+form ul, footer ul
 /* li label */
 {
   display: flex;
@@ -43,6 +43,9 @@ ul
   justify-content: center;
   margin-right: auto;
   cursor: pointer;
+}
+#langs{
+  padding-top: 15;
 }
 
 ul li{
@@ -151,16 +154,71 @@ textarea{
 /* --------------------------------------------------------------------------------- */
 img {
   display: block;
+  padding-bottom: 10px;
+  height: 80%;
+  width: 80%;
+}
+
+figure{
+  background-color: #912f40;
+  color: white;
+  text-align: center;
+}
+
+figcaption{
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 #image {
-  height: auto;
-  max-width: 100%;
+  /* height: auto; */
+  /* max-width: 100%; */
   margin-left: auto;
   margin-right: auto;
 }
 
-#navbar {
+#heading, caption, #main section{
+  text-align: center;
+}
+/* --------------------------------------------------------------- */
+#body{
+  display: flex;
+  flex-direction: column;
+}
+/* #navbar {
   position: fixed;
   top: 0;
+  width: 200px;
+} */
+
+#navbar {
+  position: fixed;       
+  top: 0;
+  left: 0;
+  width: 200px;          
+  height: 100vh;         
+  background-color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#navbar a{
+  display: block;
+  color: white;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+code{
+  background-color: lightgrey;
+  color: #333;
+  width: 100%;
+}
+
+
+#main-doc{
+  flex: 1;
+  margin-left: 205px;
+  width: 100%;
 }
